@@ -1,0 +1,67 @@
+.my_account {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    .my_account_left {
+        float: left;
+        height: 70px;
+
+        #recent_title {
+            text-align: left;
+            font-weight: 700;
+        }
+
+        #recent_amt {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        #recent_diff {
+            text-align: left;
+            color: blue;
+        }
+    }
+
+    .my_account_right {
+        float: left;
+
+        button {
+            float: right;
+            margin-top: 25px;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: rgb(233, 233, 233);
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    }
+}
+
+.my_stock {
+    ul {
+        padding: 0;
+        li {
+            margin-bottom: 7px;
+            list-style: none;
+
+            .my_stock_list {
+                display: flex;
+                width: 85%;
+                margin: auto;
+                justify-content: space-between;
+                font-size: 15px;
+                font-weight: 700;
+                .stock_ {
+                    float: left;
+                }
+
+                #cur_amt {
+                    float: right;
+                }
+            }
+        }
+    }
+}

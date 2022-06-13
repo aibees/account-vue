@@ -1,0 +1,70 @@
+.my_bank {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    .my_bank_left {
+        float: left;
+        width: 60%;
+        text-align: left;
+        height: 110px;
+
+        #recent_title {
+            text-align: left;
+            font-weight: 700;
+        }
+
+        #recent_amt {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        #recent_diff {
+            text-align: left;
+            color: blue;
+        }
+    }
+
+    .my_bank_right {
+        float: left;
+        width: 40%;
+        text-align: right;
+        font-size: 14px;
+
+        .cards {
+            .name {
+                font-size: 15px;
+            }
+            .used {
+                
+            }
+        }
+    }
+}
+
+.my_stock {
+    ul {
+        padding: 0;
+        li {
+            margin-bottom: 7px;
+            list-style: none;
+
+            .my_stock_list {
+                display: flex;
+                width: 85%;
+                margin: auto;
+                justify-content: space-between;
+                font-size: 15px;
+                font-weight: 700;
+                .stock_ {
+                    float: left;
+                }
+
+                #cur_amt {
+                    float: right;
+                }
+            }
+        }
+    }
+}
