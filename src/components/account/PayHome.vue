@@ -1,11 +1,13 @@
 <template>
-  <div id="main">
-    <div class="center bank">
-      <div id="preview">
-        preview
+  <div class="center bank">
+      <div class="preview">
+        <font-awesome-icon class="preview_icon" icon="money-bill-transfer" />
+        은행거래 현황 분석
       </div>
+      <HomeHeader />
 
       <div id="recent_output">
+        
         <div class="recent">
           data1
         </div>
@@ -22,28 +24,25 @@
           <button id="insert" v-on:click="insert_history()">입력</button>
       </div>
     </div>
-
-    <div class="center stock">
-      trading
-    </div>
-  </div>
 </template>
 
 <script setup>
-  import { useRouter } from 'vue-router'
+  import { inject } from 'vue';
+  import { useRouter } from 'vue-router';
+  import HomeHeader from './home/HomeHeader.vue';
+  const $axios = inject('$axios')
   const router = useRouter();
 
   const lookup_history = function() {
     router.push('/account/list');
   }
 
-  const insert_history = function() {
-    alert("입력하기");
+  const insert_history = async function() {
+    
   }
 
 </script>
 
-<style lang="scss" scoped>
-  @import "@@/account/home.scss";
-
+<style lang="scss">
+  @import '@@/pay/payHome.scss'
 </style>

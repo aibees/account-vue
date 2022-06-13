@@ -1,7 +1,6 @@
 <template>
   <div id="main">
-    <Header msg="가계부 내역조회" referrer="/account" />
-    <!-- <HelloWorld msg="Hello Vue 3 + Vite" /> -->
+    <Header msg="가계부 내역조회" referrer="/" />
     <div id="main_header">
         <div class="main_header_left">
             <h3>수입 및 지출 내역서</h3>
